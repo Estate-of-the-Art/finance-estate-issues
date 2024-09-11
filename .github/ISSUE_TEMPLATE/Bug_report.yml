@@ -1,110 +1,111 @@
-name: "Bug Report"
+name: Bug Report
+description: Fehlermeldungen für das Finance Estate CRM der Estate of the Art AG
 fields:
-- type: markdown
-  id: description
-  attributes:
-    label: "Beschreibung"
-    description: "Beschreibe den Fehler möglichst genau und präzise"
-  validations:
-    required: true
-- type: markdown
-  id: expected
-  attributes:
-    label: "Erwartetes Verhalten"
-    description: "Was hätte stattdessen passieren sollen?"
-  validations:
-    required: true
-- type: markdown
-  id: reproduce
-  attributes:
-    label: "Wiederholt sich dieser Fehler?"
-    description: "Erkläre wie dieser Fehler reproduziert werden kann"
-  validations:
-    required: true
-- type: "checkboxes"
-  id: panel
-  attributes:
-    label: "Panels/ Team-Typ"
-    description: "Gebe alle Panels/ Team-Typen an wo dieser Fehler auftritt."
-    options:
-    - label: "Admin"
-      required: false
-    - label: "Bank"
-      required: false
-    - label: "Customer (Kunde)"
-      required: false
-    - label: "Immo (Bauträger)"
-      required: false
-    - label: "Makler"
-      required: false
-    - label: "Sales (Immobilienvertrieb)"
-      required: false
-    - label: "Xcapital (Finanzierungsabteilung)"
-      required: false
-  validations:
-    required: true
-- type: "checkboxes"
-  id: os
-  attributes:
-    label: "Operating System"
-    description: "Welches Betriebssystem hast du verwendet?"
-    options:
-    - label: "Windows"
-      required: false
-    - label: "Apple"
-      required: false
-    - label: "ChromeOS"
-      required: false
-    - label: "Linux"
-      required: false
-  validations:
-    required: true
-- type: "checkboxes"
-  id: browser
-  attributes:
-    label: "Browser"
-    description: "Welchen Browser hast du verwendet?"
-    options:
-    - label: "Google Chrome"
-      required: false
-    - label: "Microsoft Edge"
-      required: false
-    - label: "Safari"
-      required: false
-    - label: "Mozilla Firefox"
-      required: false
-    - label: "Samsung Internet"
-      required: false
-    - label: "Opera"
-      required: false
-  validations:
-    required: true
-- type: "checkboxes"
-  id: help
-  attributes:
-    label: "Ich habe ..."
-    description: "bitte alle zutreffenden Felder auswählen"
-    options:
-    - label: "den Fehler auf anderen Panels überprüft"
-      required: false
-    - label: "den Fehler auf anderen Betriebssystemen (OS) überprüft"
-      required: false
-    - label: "den Fehler in anderen Browser reproduziert"
+  - type: markdown
+    id: description
+    attributes:
+      label: "Beschreibung"
+      description: "Beschreibe den Fehler möglichst genau und präzise"
+    validations:
       required: true
-  validations:
-    required: false
-- type: checkboxes
-  id: existed
-  attributes:
-    label: Existiert bereits eine ähnliche/gleiche Fehlermeldung?
-    description: Bitte überprüfe die bisherigen Fehlermeldungen auf dasselbe Problem.
-    options:
-      - label: Ich habe die bisherigen Fehlermeldungen überprüft und nichts vergleichbares gefunden
+  - type: markdown
+    id: expected
+    attributes:
+      label: "Erwartetes Verhalten"
+      description: "Was hätte stattdessen passieren sollen?"
+    validations:
+      required: true
+  - type: markdown
+    id: reproduce
+    attributes:
+      label: "Wiederholt sich dieser Fehler?"
+      description: "Erkläre wie dieser Fehler reproduziert werden kann"
+    validations:
+      required: true
+  - type: "checkboxes"
+    id: panel
+    attributes:
+      label: "Panels/ Team-Typ"
+      description: "Gebe alle Panels/ Team-Typen an wo dieser Fehler auftritt."
+      options:
+      - label: "Admin"
+        required: false
+      - label: "Bank"
+        required: false
+      - label: "Customer (Kunde)"
+        required: false
+      - label: "Immo (Bauträger)"
+        required: false
+      - label: "Makler"
+        required: false
+      - label: "Sales (Immobilienvertrieb)"
+        required: false
+      - label: "Xcapital (Finanzierungsabteilung)"
+        required: false
+    validations:
+      required: true
+  - type: "checkboxes"
+    id: os
+    attributes:
+      label: "Operating System"
+      description: "Welches Betriebssystem hast du verwendet?"
+      options:
+      - label: "Windows"
+        required: false
+      - label: "Apple"
+        required: false
+      - label: "ChromeOS"
+        required: false
+      - label: "Linux"
+        required: false
+    validations:
+      required: true
+  - type: "checkboxes"
+    id: browser
+    attributes:
+      label: "Browser"
+      description: "Welchen Browser hast du verwendet?"
+      options:
+      - label: "Google Chrome"
+        required: false
+      - label: "Microsoft Edge"
+        required: false
+      - label: "Safari"
+        required: false
+      - label: "Mozilla Firefox"
+        required: false
+      - label: "Samsung Internet"
+        required: false
+      - label: "Opera"
+        required: false
+    validations:
+      required: true
+  - type: "checkboxes"
+    id: help
+    attributes:
+      label: "Ich habe ..."
+      description: "bitte alle zutreffenden Felder auswählen"
+      options:
+      - label: "den Fehler auf anderen Panels überprüft"
+        required: false
+      - label: "den Fehler auf anderen Betriebssystemen (OS) überprüft"
+        required: false
+      - label: "den Fehler in anderen Browser reproduziert"
         required: true
-- type: textarea
-  attributes:
-    label: Bilder/Screenshots/Mockups/Links?
-    description: |
-      Links? Referenzen? Alles was hilfreich ist um dieses Problem schneller zu verstehen und zu beheben!
-      Achtung. Bitte gebe für jedes Panel einen Link an wo dieser Fehler auftritt. Sollte ein Panel markiert sein ohne passenden Link wird diese Fehlermeldung kommentarlos geschlossen und als erledigt markiert.
-      Tipp: Sie können Bilder oder Protokolldateien anhängen, indem Sie auf diesen Bereich klicken, um ihn zu markieren, und dann die Dateien in den Bereich ziehen.
+    validations:
+      required: false
+  - type: checkboxes
+    id: existed
+    attributes:
+      label: Existiert bereits eine ähnliche/gleiche Fehlermeldung?
+      description: Bitte überprüfe die bisherigen Fehlermeldungen auf dasselbe Problem.
+      options:
+        - label: Ich habe die bisherigen Fehlermeldungen überprüft und nichts vergleichbares gefunden
+          required: true
+  - type: textarea
+    attributes:
+      label: Bilder/Screenshots/Mockups/Links?
+      description: |
+        Links? Referenzen? Alles was hilfreich ist um dieses Problem schneller zu verstehen und zu beheben!
+        Achtung. Bitte gebe für jedes Panel einen Link an wo dieser Fehler auftritt. Sollte ein Panel markiert sein ohne passenden Link wird diese Fehlermeldung kommentarlos geschlossen und als erledigt markiert.
+        Tipp: Sie können Bilder oder Protokolldateien anhängen, indem Sie auf diesen Bereich klicken, um ihn zu markieren, und dann die Dateien in den Bereich ziehen.
