@@ -1,6 +1,5 @@
 name: Bug Report
 description: Fehlermeldungen für das Finance Estate CRM der Estate of the Art AG
-title: "Fehler: "
 labels: ["bug", "triage"]
 body:
   - type: "checkboxes"
