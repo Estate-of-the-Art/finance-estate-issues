@@ -2,6 +2,18 @@ name: Bug Report
 description: Fehlermeldungen für das Finance Estate CRM der Estate of the Art AG
 labels: ["bug", "triage"]
 body:
+  - type: input
+    id: from
+    attributes:
+      label: "Eingeloggter Benutzer"
+      description: "E-Mail des eingeloggten Benutzers"
+      placeholder: "max.mustermann@eota.art"
+  - type: input
+    id: resource
+    attributes:
+      label: "Betroffene Resource"
+      description: "UUID von Employee/Loan/Media/Project/RealEstate/Team/User"
+      placeholder: "https:/example.test/demo-team/teams/0121c4a2-b017-4dad-aab6-e0d86157ad92/edit -> 0121c4a2-b017-4dad-aab6-e0d86157ad92"
   - type: "checkboxes"
     id: panel
     attributes:
