@@ -1,30 +1,8 @@
 name: Bug Report
 description: Fehlermeldungen für das Finance Estate CRM der Estate of the Art AG
-title: "[Bug]: "
+title: "Fehler: "
 labels: ["bug", "triage"]
-projects: ["Estate-of-the-Art/finance-estate", "Estate-of-the-Art/finance-estate-issues"]
 body:
-  - type: textarea
-    id: description
-    attributes:
-      label: "Beschreibung"
-      description: "Beschreibe den Fehler möglichst genau und präzise"
-    validations:
-      required: true
-  - type: textarea
-    id: expected
-    attributes:
-      label: "Erwartetes Verhalten"
-      description: "Was hätte stattdessen passieren sollen?"
-    validations:
-      required: true
-  - type: textarea
-    id: reproduce
-    attributes:
-      label: "Wiederholt sich dieser Fehler?"
-      description: "Erkläre wie dieser Fehler reproduziert werden kann"
-    validations:
-      required: true
   - type: "checkboxes"
     id: panel
     attributes:
@@ -45,6 +23,27 @@ body:
         required: false
       - label: "Xcapital (Finanzierungsabteilung)"
         required: false
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Beschreibung"
+      description: "Beschreibe den Fehler möglichst genau und präzise"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Erwartetes Verhalten"
+      description: "Was hätte stattdessen passieren sollen?"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: "Wiederholt sich dieser Fehler?"
+      description: "Erkläre wie dieser Fehler reproduziert werden kann"
     validations:
       required: true
   - type: "checkboxes"
