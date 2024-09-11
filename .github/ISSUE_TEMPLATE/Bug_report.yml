@@ -1,6 +1,6 @@
 name: Bug Report
 description: Fehlermeldungen für das Finance Estate CRM der Estate of the Art AG
-fields:
+body:
   - type: markdown
     id: description
     attributes:
