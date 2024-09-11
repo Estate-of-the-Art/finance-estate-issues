@@ -4,19 +4,19 @@ body:
   - type: markdown
     id: description
     attributes:
-      label: "Beschreibung"
+      value: "Beschreibung"
     validations:
       required: true
   - type: markdown
     id: expected
     attributes:
-      label: "Erwartetes Verhalten"
+      value: "Erwartetes Verhalten"
     validations:
       required: true
   - type: markdown
     id: reproduce
     attributes:
-      label: "Wiederholt sich dieser Fehler?"
+      value: "Wiederholt sich dieser Fehler?"
     validations:
       required: true
   - type: "checkboxes"
