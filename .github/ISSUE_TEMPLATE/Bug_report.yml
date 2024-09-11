@@ -12,8 +12,9 @@ body:
     id: resource
     attributes:
       label: "Betroffene Resource"
-      description: "UUID von Employee/Loan/Media/Project/RealEstate/Team/User"
-      placeholder: "https:/example.test/demo-team/teams/0121c4a2-b017-4dad-aab6-e0d86157ad92/edit -> 0121c4a2-b017-4dad-aab6-e0d86157ad92"
+      description: "UUID von Employee/Loan/Media/Project/RealEstate/Team/User |
+      https:/example.test/demo-team/teams/0121c4a2-b017-4dad-aab6-e0d86157ad92/edit -> 0121c4a2-b017-4dad-aab6-e0d86157ad92"
+      placeholder: 0121c4a2-b017-4dad-aab6-e0d86157ad92
   - type: "checkboxes"
     id: panel
     attributes:
