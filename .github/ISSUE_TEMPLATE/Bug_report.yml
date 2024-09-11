@@ -5,21 +5,18 @@ body:
     id: description
     attributes:
       label: "Beschreibung"
-      description: "Beschreibe den Fehler möglichst genau und präzise"
     validations:
       required: true
   - type: markdown
     id: expected
     attributes:
       label: "Erwartetes Verhalten"
-      description: "Was hätte stattdessen passieren sollen?"
     validations:
       required: true
   - type: markdown
     id: reproduce
     attributes:
       label: "Wiederholt sich dieser Fehler?"
-      description: "Erkläre wie dieser Fehler reproduziert werden kann"
     validations:
       required: true
   - type: "checkboxes"
