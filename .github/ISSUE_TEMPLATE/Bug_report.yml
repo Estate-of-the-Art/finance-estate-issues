@@ -1,6 +1,8 @@
 name: Bug Report
 description: Fehlermeldungen für das Finance Estate CRM der Estate of the Art AG
 labels: ["bug", "triage"]
+assignees:
+  - john-wink
 body:
   - type: input
     id: from
